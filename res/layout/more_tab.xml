@@ -1,0 +1,81 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical">
+        
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:id="@+id/image_container">"
+        <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/banner_height"
+        android:layout_gravity="center_horizontal"
+        android:scaleType="fitXY"
+        android:src="@drawable/articon_banner" />
+     </LinearLayout>
+     
+         <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical"
+            android:layout_below="@id/image_container">
+        
+       		<ScrollView
+   		    android:layout_width="fill_parent" 
+   		    android:layout_height="fill_parent"
+            android:fillViewport="true">
+                
+            <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:id="@+id/layout">
+        
+           <Button
+            android:id="@+id/btnAuditions"
+            android:layout_width="@dimen/button_width"
+            android:layout_height="@dimen/button_height"
+            android:layout_margin="@dimen/button_margin"
+            android:layout_gravity="center"
+            android:text="Auditions" />
+
+        	<Button
+            android:id="@+id/btnTwitter"
+            android:layout_width="@dimen/button_width"
+            android:layout_height="@dimen/button_height"
+            android:layout_margin="@dimen/button_margin"
+            android:layout_gravity="center_horizontal"
+            android:text="Twitter" />
+
+        	<Button
+            android:id="@+id/btnFacebook"
+            android:layout_width="@dimen/button_width"
+            android:layout_height="@dimen/button_height"
+            android:layout_margin="@dimen/button_margin"
+            android:layout_gravity="center_horizontal"
+            android:text="Facebook" />
+
+        	<Button
+            android:id="@+id/btnWebsite"
+            android:layout_width="@dimen/button_width"
+            android:layout_height="@dimen/button_height"
+            android:layout_margin="@dimen/button_margin"
+            android:layout_gravity="center_horizontal"
+            android:text="Website" />
+
+        	<Button
+            android:id="@+id/btnContactUs"
+            android:layout_width="@dimen/button_width"
+            android:layout_height="@dimen/button_height"
+            android:layout_margin="@dimen/button_margin"
+            android:layout_gravity="center_horizontal"
+            android:text="Contact Us" />
+
+            </LinearLayout>
+            </ScrollView>
+                 
+		 </RelativeLayout>
+</RelativeLayout>

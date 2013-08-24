@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="co.za.ideas4apps.articon"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="16"
+        android:targetSdkVersion="17" />
+    
+    <permission
+    android:name="co.za.ideas4apps.articon.permission.MAPS_RECEIVE"
+    android:protectionLevel="signature" />
+        
+    <uses-feature
+        android:glEsVersion="0x00020000"
+        android:required="true" />
+    
+    <uses-permission android:name="co.za.ideas4apps.articon.permission.MAPS_RECEIVE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/articon2small"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="co.za.ideas4apps.articon.MainActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="co.za.ideas4apps.articon.AboutActivity"
+            android:label="@string/general_title" >
+        </activity>
+        <activity
+            android:name="co.za.ideas4apps.articon.VisionActivity"
+            android:label="@string/general_title" >
+        </activity>
+        <activity
+            android:name="co.za.ideas4apps.articon.MissionActivity"
+            android:label="@string/general_title" >
+        </activity>
+        <activity
+            android:name="co.za.ideas4apps.articon.DanceActivity"
+            android:label="@string/title_activity_dance" >
+        </activity>
+        <activity
+            android:name="co.za.ideas4apps.articon.VisualActivity"
+            android:label="@string/title_activity_visual" >
+        </activity>
+        <activity
+ 			android:name="co.za.ideas4apps.articon.HospitalityActivity"
+            android:label="@string/title_activity_hospitality" >
+        </activity>
+        <activity
+            android:name="co.za.ideas4apps.articon.DramaActivity"
+            android:label="@string/title_activity_drama" >
+        </activity>
+        <activity
+            android:name="co.za.ideas4apps.articon.DesignActivity"
+            android:label="@string/title_activity_design" >
+        </activity>
+        <activity
+            android:name="co.za.ideas4apps.articon.MusicActivity"
+            android:label="@string/title_activity_music" >
+        </activity>
+        <activity
+            android:name="co.za.ideas4apps.articon.Grade8Activity"
+            android:label="@string/title_activity_grade8" >
+        </activity>
+        <activity
+            android:name="co.za.ideas4apps.articon.Grade10Activity"
+            android:label="@string/title_activity_grade10" >
+        </activity>
+        <activity
+            android:name="co.za.ideas4apps.articon.ContactUsActivity"
+            android:label="@string/title_activity_contact_us" >
+        </activity>
+        <activity
+            android:name="co.za.ideas4apps.articon.GoogleMapActivity"
+            android:label="@string/title_activity_google_map"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="co.za.ideas4apps.articon.TabHostActivity"
+            android:label="@string/app_name"
+            android:launchMode="singleInstance" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+        </activity>
+        
+      <meta-data
+      android:name="com.google.android.maps.v2.API_KEY"
+      android:value="AIzaSyA68QWc7CfOFj0QtzwWvvrOe1Nkrm3gO9E" />
+    </application>
+
+</manifest>

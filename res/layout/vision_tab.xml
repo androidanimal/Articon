@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+    
+       
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:id="@+id/image_container">
+        <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/banner_height"
+        android:layout_gravity="center_horizontal"
+        android:scaleType="fitXY"
+        android:src="@drawable/articon_banner" />
+     </LinearLayout>
+     
+     <RelativeLayout
+     android:layout_width="fill_parent"
+     android:layout_height="fill_parent"
+     android:orientation="vertical"
+     android:layout_below="@id/image_container">
+  
+        <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_centerInParent="true"
+        android:id="@+id/layout">
+
+		
+		    <Button
+		        android:id="@+id/btnVision"
+		        android:layout_width="@dimen/button_width"
+		        android:layout_height="@dimen/button_height"
+		        android:layout_margin="@dimen/button_margin"
+		        android:layout_gravity="center"
+		        android:text="Vision" />
+		
+		    <Button
+		        android:id="@+id/btnMission"
+		        android:layout_width="@dimen/button_width"
+		        android:layout_height="@dimen/button_height"
+		        android:layout_margin="@dimen/button_margin"
+		        android:layout_gravity="center"
+		        android:text="Mission" />
+		
+		    <Button
+		        android:id="@+id/btnAbout"
+		        android:layout_width="@dimen/button_width"
+		        android:layout_height="@dimen/button_height"
+		        android:layout_margin="@dimen/button_margin"
+		        android:layout_gravity="center"
+		        android:text="About Us" />
+    	</LinearLayout>
+    
+   </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,25 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity" >
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        android:src="@drawable/articon_banner"
+        android:contentDescription="@string/main_image2" />
+
+    <Button
+        android:id="@+id/main_label"
+        android:layout_width="@dimen/button_width"
+        android:layout_height="@dimen/button_height"
+        android:alpha="0.9"
+        android:layout_gravity="center"
+        android:text="@string/main_button_text"
+        android:textColor="@color/Black"
+        android:textSize="@dimen/xtra_big_font_size" />
+        
+</LinearLayout>
